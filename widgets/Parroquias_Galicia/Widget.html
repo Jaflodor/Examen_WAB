@@ -1,0 +1,32 @@
+<div>
+
+  <div id="caja">
+    <h3>Buscador de Parroquias</h3>
+
+    <label class="etiqueta" for="provincias">Provincias:</label>
+    <select name="provincias" data-dojo-attach-point="buscador_provincias" data-dojo-attach-event ="onchange:lista_concejos" class="form-select">
+      <option value="-1">Seleeciona una provincia</option>
+      <option value="15">A Coruña</option>
+      <option value="27">Lugo</option>
+      <option value="32">Ourense</option>
+      <option value="36">Pontevedra</option>
+    </select>
+  
+    <label class="etiqueta" for="concejos">Concejos:</label>
+    <select name="concejos" data-dojo-attach-point="buscador_concejos" data-dojo-attach-event="onchange:lista_parroquias" class="form-select"></select>
+    <button data-dojo-attach-event="onclick:zoomConcejos" class="btn btn-outline-primary" id="boton1">🔍</button>
+  
+    <br>
+    
+    <label class="etiqueta" for="parroquias">Parroquias:</label>
+    <select name="parroquias" data-dojo-attach-point="buscador_parroquias" class="form-select"></select>
+    <button data-dojo-attach-event="onclick:zoomParroquias" class="btn btn-outline-primary" id="boton2">🔍</button>
+
+  </div>
+
+  
+
+  
+
+  
+</div>
